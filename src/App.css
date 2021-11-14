@@ -1,0 +1,259 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;1,100&display=swap");
+
+:root {
+    --primay: black;
+    --bg-primay: white;
+
+    --link: #2a0b0b;
+}
+
+html {
+    box-sizing: border-box;
+    @media (max-width: 425px) {
+        font-size: 8px;
+    }
+}
+
+.App {
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+}
+
+.App-logo {
+    height: 40vmin;
+    pointer-events: none;
+}
+
+p {
+    margin: 20px 0px;
+}
+
+.header {
+    font-size: 3rem;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.body {
+    margin: 20px 0 10px;
+    font-size: 0.9rem;
+    font-family: "Raleway", sans-serif;
+}
+
+button {
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 35px;
+
+    background: #845ec2;
+    color: white;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
+}
+
+.App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+
+    background: var(--bg-primay);
+    color: var(--primay);
+}
+
+.App-link {
+    color: #61dafb;
+    color: var(--link);
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+button {
+    font-size: calc(10px + 2vmin);
+}
+
+.home-heading-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.show-more {
+    margin-top: 0px !important;
+}
+
+.crypto-card-container {
+    min-height: 65vh !important;
+}
+
+.crypto-card {
+    min-width: 250px;
+}
+.crypto-card .crypto-image {
+    width: 35px;
+}
+.image-inner {
+    width: 100%;
+}
+.fanart {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+.gradient {
+    position: absolute;
+    z-index: -2;
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to bottom right, transparent, brown);
+}
+.image-content-wrapper {
+    display: flex;
+    /* justify-content: center; */
+    align-items: flex-end;
+    height: 100%;
+    z-index: 99;
+    padding: 2rem;
+    /* background: #fff; */
+}
+.small-image {
+    width: 280px;
+    margin-right: 2rem;
+}
+.details-wrapper {
+    color: #fff;
+    text-align: left;
+    /* align-self: center; */
+    /* background: #61dafb; */
+}
+.title {
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+.tagline {
+    font-size: 2rem;
+}
+.description {
+    font-size: 1rem;
+    font-weight: 500;
+}
+.meta-datas {
+    display: flex;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+.rating-count {
+    display: flex;
+}
+.rating {
+    margin-right: 12px;
+}
+.rating > img {
+    width: 40px;
+    margin-right: 12px;
+}
+.metascore > img {
+    width: 20px;
+    margin-right: 12px;
+}
+.meta-datas > div {
+    margin-right: 1rem;
+}
+.bottom-details-container {
+    padding: 1rem 2rem;
+    background: brown;
+    color: #fff;
+}
+.description-header {
+    font-weight: 900;
+    color: #fff;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    margin-top: 16px;
+}
+.description-container {
+    text-align: left;
+    color: #fff;
+}
+.row {
+    display: flex;
+}
+
+.row > div {
+    width: 33.3%;
+}
+
+.movie-title-home {
+    font-size: 2rem;
+    position: absolute;
+    z-index: 100;
+}
+.image-slider {
+    z-index: 2;
+}
+.hello {
+    font-size: 2rem;
+    position: absolute;
+    z-index: 100;
+}
+
+.carousel-wrapper {
+    width: 100%;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 800px) {
+    .home-title {
+        font-size: 1.4rem !important;
+    }
+    .fanart {
+        height: 100%;
+    }
+    .gradient {
+        height: 100%;
+    }
+    .title {
+        font-size: 2rem;
+    }
+    .tagline {
+        font-size: 1.5rem;
+    }
+    .details-wrapper {
+        margin-top: 1rem;
+    }
+    .show-more {
+        font-size: 1.3rem !important;
+    }
+    .meta-datas {
+        display: block;
+    }
+    .image-content-wrapper {
+        display: block;
+    }
+    .row {
+        display: block;
+    }
+
+    .row > div {
+        width: 100%;
+    }
+}
